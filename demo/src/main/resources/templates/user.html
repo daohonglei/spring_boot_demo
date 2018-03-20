@@ -2,11 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>hello spring boot</title>
 </head>
 <body>
-user <h1 th:text="${name}"> user</h1>
-<form th:action="@{/postform}" th:object="${user}" method="post" th:method="post">
+
+<form th:action="${method}" th:object="${user}" method="post" th:method="post">
     <input type="text" th:field="*{name}"/>
     <input type="text" th:field="*{age}"/>
     <input type="submit"/>
